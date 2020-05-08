@@ -1,0 +1,113 @@
+html {
+    font-size: 100%;
+  }
+  body {
+    margin: 0;
+    color: #000000 !important;
+    line-height: 28px !important;
+    background-color: #ffffff !important;
+    font-family: "Poppins", sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  /* TESTIMONIAL(Home page) slider dots css */
+  
+  .slick-dots.customDots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: auto;
+  }
+  .slick-dots.customDots li {
+    display: block;
+  }
+  .slick-dots.customDots li {
+    margin: 0 0 10px;
+  }
+  .slick-dots.customDots li button:before {
+    font-size: 12px;
+    opacity: 1;
+    color: #e2dede;
+  }
+  .slick-dots.customDots li.slick-active button:before {
+    opacity: 1;
+    color: #252f6a;
+  }
+  .slick-slide.slick-center p {
+    opacity: 1 !important;
+    transition-delay: 2.5s;
+  }
+  .slick-slide img {
+    margin: 0 auto;
+  }
+  a {
+    color: #586dec;
+    text-decoration: none;
+    transition: all 300ms;
+    outline: 0;
+  }
+  a:hover {
+    color: #252f6a;
+    /* text-decoration: underline; */
+  }
+  @media screen and (min-width: 1660px) {
+    .slick-dots.customDots {
+      right: -23%;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .slick-dots.customDots {
+      position: static;
+      margin-top: 15px;
+    }
+    .slick-dots.customDots li {
+      display: inline-block;
+    }
+  }
+  .spinner-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .loading-icon {
+    display: flex;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    animation-name: spin;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  .loading-icon div {
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
